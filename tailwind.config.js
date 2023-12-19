@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html"],
+  content: ["./**/*.html", "./**/*.js"],
   theme: {
     extend: {
       colors: {
@@ -11,7 +11,7 @@ module.exports = {
         'flashDanna': '#4FF57B',
       },
       gridTemplateColumns:{
-        "menu": "175px 1fr 175px"
+        "menu": "150px 1fr 175px"
       },
     },
   },
