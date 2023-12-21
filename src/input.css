@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.text-shadow {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+.cta-striper-bg {
+    background-image: repeating-linear-gradient(135deg, rgba(151,151,151, 0.1) 0px, rgba(151,151,151, 0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, #06373A,#06373A);
+  }

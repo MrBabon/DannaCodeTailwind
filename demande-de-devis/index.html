@@ -28,26 +28,26 @@
             <nav class="border-b border-gray-400 top-0 z-20 p-4 w-full grid grid-cols-none shadow-sm bg-navDanna md:max-w-8xl md:grid-cols-menu md:shadow-none md:relative md:mx-auto md:border-b-0">
                 
                 <div class="flex justify-between items-center md:justify-center">
-                    <a href="">
+                    <a href="..">
                         <img src="../assets/images/DannaCode.png" alt="Logo DannaCode" class="w-12">
                     </a>
                     <button class="logo-button icone-toggle bg-navDanna rounded-md p-2  ring-1 ring-flashDanna ring-opacity-20 md:hidden">
                         <span class="sr-only">Ouvrir le menu principal</span>
-                        <img src="../assets/images/menu.svg" alt="Icône hamberger" class="h-6 w-6 ">
+                        <img src="../assets/images/icon/menu.svg" alt="Icône hamberger" class="h-6 w-6 ">
                     </button>
                 </div>
 
                 <ul class="hidden toggle-menu px-1 pt-6 flex-col md:flex md:flex-row md:space-x-10 md:pt-0 md:w-auto md:items-center md:justify-start">
                     <li class="py-2 pl-3">
-                        <a href="" class="font-medium text-lg text-zinc-100 border-b-2 border-flashDanna md:text-base lg:text-lg">Accueil</a>
+                        <a href=".." class="font-medium text-lg text-zinc-300 hover:text-white md:text-base lg:text-lg">Accueil</a>
                     </li>
                     <li class="py-2 pl-3">
-                        <a href="../services/" class="font-medium text-lg text-zinc-300 hover:text-white transition duration-300 ease-in-out md:text-base lg:text-lg">Services</a>
+                        <a href="../services/" class="font-medium text-lg text-zinc-100 hover:text-white transition duration-300 ease-in-out md:text-base lg:text-lg">Services</a>
                     </li>
                     <li class="md:py-2 relative">
                         <div class=" pl-3">
                             <button type="button" class="hidden md:flex md:items-center font-medium text-lg text-zinc-300 hover:text-white transition duration-700 ease-in-out md:text-base lg:text-lg" id="menu-button" aria-expanded="true" aria-haspopup="true">
-                                Contact
+                                <span class=" border-b-2 border-flashDanna">Contact</span>
                                 <svg class="ml-2 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                     <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
                                 </svg>
@@ -55,7 +55,7 @@
                         </div>
                         <div class="hidden absolute md:right-0 md:top-10 z-10 mt-2 w-56 origin-top-right rounded-md bg-navDanna shadow-lg ring-1 ring-flashDanna ring-opacity-50 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
                             <div class="py-1" role="none">
-                              <a href="../demande-de-devis/" class="text-flashDanna block px-4 py-2 text-sm hover:bg-bodyDanna hover:text-green-500 transition duration-300 ease-in-out md:hidden" role="menuitem" tabindex="-1" id="menu-item-0">Obtenir un devis gratuit</a>
+                              <a href="" class="text-flashDanna block px-4 py-2 text-sm hover:bg-bodyDanna hover:text-green-500 transition duration-300 ease-in-out md:hidden" role="menuitem" tabindex="-1" id="menu-item-0">Obtenir un devis gratuit</a>
                               <a href="tel:+33698118890" class="text-gray-300 block px-4 py-2 text-sm hover:bg-bodyDanna hover:text-white transition duration-300 ease-in-out" role="menuitem" tabindex="-1" id="menu-item-1">+33 6 98 11 88 90</a>
                               <a href="../contact/" class="text-gray-300 block px-4 py-2 text-sm hover:bg-bodyDanna hover:text-white transition duration-300 ease-in-out" role="menuitem" tabindex="-1" id="menu-item-2">Nous écrire</a>
                             </div>
@@ -63,62 +63,62 @@
                     </li>
                     <li class="py-2 pl-3 relative  md:hidden">
                         <button type="button" class="flex items-center font-medium text-lg text-zinc-300 hover:text-white" id="menu-button-phone" aria-controls="disclosure-1" aria-expanded="false">
-                            Contact
+                            <span class=" border-b-2 border-flashDanna">Contact</span>
                             <svg class="ml-2 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                 <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
                             </svg>
                         </button>
                         <div id="disclosure-1" class="hidden mt-2 space-y-2 transition duration-700 ease-in-out">
-                            <a href="demande-de-devis/" class="block font-medium text-flashDanna py-1 leading-7 pl-3 hover:text-green-500 transition duration-300 ease-in-out">Obtenir un devis gratuit</a>
+                            <a href="" class="block font-medium text-flashDanna py-1 leading-7 pl-3 hover:text-green-500 transition duration-300 ease-in-out">Obtenir un devis gratuit</a>
                             <a href="tel:+33698118890" class="block font-medium text-gray-300 py-1 leading-7 pl-3 hover:text-white transition duration-300 ease-in-out">+33 6 98 11 88 90</a>
-                            <a href="" class="block font-medium text-gray-300 py-1 leading-7 pl-3 hover:text-white transition duration-300 ease-in-out">Nous écrire</a>
+                            <a href="../contact/" class="block font-medium text-gray-300 py-1 leading-7 pl-3 hover:text-white transition duration-300 ease-in-out">Nous écrire</a>
                         </div>
                     </li>
                 </ul>
 
                 <div class="menu-items hidden justify-center items-center mt-6 md:mt-0 md:justify-end md:flex">
-                    <a href="#" class="hidden px-6 py-2 font-medium text-flashDanna hover:text-[#72cf6a] text-center w-40 md:text-xs md:flex lg:text-base">Obtenir un devis gratuit</a>
+                    <a href="" class="hidden px-6 py-2 font-medium text-flashDanna hover:text-[#72cf6a] text-center w-40 md:text-xs md:flex lg:text-base">Obtenir un devis gratuit</a>
                 </div>
             </nav>
         </header>
         
         <footer class="bg-navDanna py-5 mt-auto border-y border-gray-400">
             <div class="grid grid-cols-1 max-w-xl mx-auto p-4 lg:grid-cols-3 lg:max-w-7xl md:py-10">
-                <div class="ml-2 mt-2 order-2 border-b-2 lg:border-0 lg:order-1 lg:ml-6">
+                <div class="ml-2 my-5 order-2 border-b-2 lg:border-0 lg:order-1 lg:ml-6">
                     <h5 class="font-bold text-gray-100 text-xl">Contact</h5>
                     <ul class="pt-2">
                         <li class="py-2">
                             <div class="flex space-x-4">
-                                <img src="../assets/images/telephone-fill.svg" alt="Phone" class="w-5">
+                                <img src="../assets/images/icon/telephone-fill.svg" alt="Phone" class="w-5">
                                 <a href="tel:+33698118890" class="text-gray-400 text-sm hover:text-white transition duration-200 ease-in-out">+33 6 98 11 88 90</a>
                             </div>
                         </li>
                         <li class="py-2">
                             <div class="flex space-x-4">
-                                <img src="../assets/images/envelope-at-fill.svg" alt="envelope" class="w-5">
+                                <img src="../assets/images/icon/envelope-at-fill.svg" alt="envelope" class="w-5">
                                 <a href="mailto:contact@dannacode.com" class="text-gray-400 text-sm hover:text-white transition duration-200 ease-in-out">contact@dannacode.com</a>
                             </div>
                         </li>
                         <li class="py-2">
                             <div class="flex space-x-4 mb-4">
                                 <div class="w-10 h-10 rounded-full flex justify-center items-center transition duration-200 hover:scale-110 hover:bg-bodyDanna">
-                                    <a href="" class="">
-                                        <img src="../assets/images/facebook.svg" alt="" class="w-5">
+                                    <a href="">
+                                        <img src="../assets/images/icon/facebook.svg" alt="facebook" class="w-5">
                                     </a>
                                 </div>
                                 <div class="w-10 h-10 rounded-full flex justify-center items-center transition duration-200 hover:scale-110 hover:bg-bodyDanna">
                                 <a href="">
-                                    <img src="../assets/images/instagram.svg" alt="" class="w-5">
+                                    <img src="../assets/images/icon/instagram.svg" alt="instagram" class="w-5">
                                 </a>
                                 </div>
                                 <div class="w-10 h-10 rounded-full flex justify-center items-center transition duration-200 hover:scale-110 hover:bg-bodyDanna">
                                     <a href="">
-                                        <img src="../assets/images/linkedin.svg" alt="" class="w-5">
+                                        <img src="../assets/images/icon/linkedin.svg" alt="linkedin" class="w-5">
                                     </a>
                                 </div>
                                 <div class="w-10 h-10 rounded-full flex justify-center items-center transition duration-200 hover:scale-110 hover:bg-bodyDanna">
                                 <a href="">
-                                    <img src="../assets/images/twitter-x.svg" alt="" class="w-5">
+                                    <img src="../assets/images/icon/twitter-x.svg" alt="twitter" class="w-5">
                                 </a>
                                 </div>
                             </div>
@@ -126,8 +126,8 @@
                     </ul>
                 </div>
                 <div class="order-1 ml-2 lg:flex lg:items-center lg:justify-center">
-                    <a href="">
-                        <img src="../assets/images/DannaCode.png" alt="" class="w-40 ">
+                    <a href="..">
+                        <img src="../assets/images/DannaCode.png" alt="Logo DannaCode" class="w-40 lg:w-48">
                     </a>
                 </div>
                 <div class="order-3 my-5 ml-2 lg:text-right lg:mr-6">
@@ -140,7 +140,7 @@
                             <a href="../contact/" class="text-gray-400 text-base hover:text-gray-50 transition duration-200 ease-in-out">Contact</a>
                         </li>
                         <li class="my-2">
-                            <a href="../demande-de-devis/" class="text-gray-400 text-base hover:text-gray-50 transition duration-200 ease-in-out">Demande de devis</a>
+                            <a href="" class="text-gray-400 text-base hover:text-gray-50 transition duration-200 ease-in-out">Demande de devis</a>
                         </li>
                         <li class="mt-2">
                             <a href="../mentions-legales/" class="text-gray-400 text-base hover:text-gray-50 transition duration-200 ease-in-out">Mentions légales</a>
@@ -151,7 +151,7 @@
             </div>
         </footer>
         <div class="py-4 w-full text-center">
-            <p class="font-extralight text-sm text-gray-100 sm:text-base">&nbsp;Copyright&nbsp;&copy;&nbsp;DannaCode <script>document.write(new Date().getFullYear())</script> - <a href="mentions-legales/" class="text-gray-400 transition duration-100 ease-in-out hover:text-gray-100">Mentions légales</a></p>
+            <p class="font-extralight text-sm text-gray-50 sm:text-base">&nbsp;Copyright&nbsp;&copy;&nbsp;DannaCode <script>document.write(new Date().getFullYear())</script> - <a href="../mentions-legales/" class="text-gray-400 transition duration-100 ease-in-out hover:text-white">Mentions légales</a></p>
         </div>
       <script type="module" src="../assets/js/script.js"></script>
     </body>

@@ -13,10 +13,10 @@ export function initializeMenu() {
         // Changer le logo en conséquence
         if (menuVisible) {
             // Changer vers le logo de fermeture du menu
-            logoButton.src = "../assets/images/x-lg.svg";
+            logoButton.src = "../assets/images/icon/x-lg.svg";
         } else {
             // Changer vers le logo par défaut
-            logoButton.src = "../assets/images/menu.svg";
+            logoButton.src = "../assets/images/icon/menu.svg";
         }
     };
 
