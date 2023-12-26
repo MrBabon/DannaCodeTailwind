@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DannaCode. || Conception Web - Maintenance - Référencement</title>
+        <title>Services || DannaCode.</title>
         <meta name="author" content="DannaCode.">
         <meta name="description" content="DannaCode. || Votre solution web tout-en-un : conception de sites (vitrine, e-commerce, landing page), création d'applications avec espace membre, génération de leads, maintenance, et référencement. Simplifiez votre digital avec notre expertise.">
         <meta name="keywords" content="Conception de sites web, Site vitrine, Site e-commerce, Landing page, Application web, Espace membre, Génération de leads, Maintenance web, Référencement SEO, Développement web, Web design, Expérience utilisateur (UX), Interface utilisateur (UI),Création digitale, Stratégie web, Solutions numériques, Optimisation de site, Réactivité mobile, Design moderne, Performance web">
@@ -19,12 +19,15 @@
         <!-- Font-family -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Inter&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+        <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Righteous&display=swap" rel="stylesheet">
         <!-- Cookie -->
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
     </head>
-    <body class="bg-bodyDanna">
-        <header class="w-full bg-navDanna border-b border-gray-400">
+    <body class="bg-gradient-to-br from-fontDanna via-bodyDanna to-navDanna">
+        <!------- 
+        | NAVBAR |
+         -------->
+         <header class="fixed w-full bg-navDanna border-b border-gray-400 z-50">
             <nav class="border-b border-gray-400 top-0 z-20 p-4 w-full grid grid-cols-none shadow-sm bg-navDanna md:max-w-8xl md:grid-cols-menu md:shadow-none md:relative md:mx-auto md:border-b-0">
                 
                 <div class="flex justify-between items-center md:justify-center">
@@ -39,14 +42,22 @@
 
                 <ul class="hidden toggle-menu px-1 pt-6 flex-col md:flex md:flex-row md:space-x-10 md:pt-0 md:w-auto md:items-center md:justify-start">
                     <li class="py-2 pl-3">
-                        <a href=".." class="font-medium text-lg text-zinc-300 hover:text-white md:text-base lg:text-lg">Accueil</a>
+                        <div class="group">
+                            <div class="flex">
+                                <a href=".." class="font-medium text-lg text-zinc-300 relative after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:absolute after:origin-bottom-left after:transform after:ease-in-out after:duration-200 w-full after:w-full group-hover:after:scale-x-100 group-hover:after:origin-bottom-left after:bg-flashDanna hover:text-white md:text-base lg:text-lg">Accueil</a>
+                            </div>
+                        </div>
                     </li>
                     <li class="py-2 pl-3">
-                        <a href="" class="font-medium text-lg text-zinc-100 border-b-2 border-flashDanna hover:text-white transition duration-300 ease-in-out md:text-base lg:text-lg">Services</a>
+                        <div class="group">
+                            <div class="flex">
+                                <a href="" class="font-medium text-lg text-zinc-100 border-b-2 border-flashDanna md:text-base lg:text-lg">Services</a>
+                            </div>
+                        </div>
                     </li>
                     <li class="md:py-2 relative">
-                        <div class=" pl-3">
-                            <button type="button" class="hidden md:flex md:items-center font-medium text-lg text-zinc-300 hover:text-white transition duration-700 ease-in-out md:text-base lg:text-lg" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                        <div class=" pl-3 group"> 
+                            <button type="button" class="hidden font-medium text-lg text-zinc-300 relative after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:absolute after:origin-bottom-left after:transform after:ease-in-out after:duration-200 w-full after:w-full group-hover:after:scale-x-75 group-hover:after:origin-bottom-left after:bg-flashDanna hover:text-white transition duration-400 ease-in-out md:flex md:items-center md:text-base lg:text-lg" id="menu-button" aria-expanded="true" aria-haspopup="true">
                                 Contact
                                 <svg class="ml-2 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                     <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
@@ -55,7 +66,6 @@
                         </div>
                         <div class="hidden absolute md:right-0 md:top-10 z-10 mt-2 w-56 origin-top-right rounded-md bg-navDanna shadow-lg ring-1 ring-flashDanna ring-opacity-50 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
                             <div class="py-1" role="none">
-                              <a href="../demande-de-devis/" class="text-flashDanna block px-4 py-2 text-sm hover:bg-bodyDanna hover:text-green-500 transition duration-300 ease-in-out md:hidden" role="menuitem" tabindex="-1" id="menu-item-0">Obtenir un devis gratuit</a>
                               <a href="tel:+33698118890" class="text-gray-300 block px-4 py-2 text-sm hover:bg-bodyDanna hover:text-white transition duration-300 ease-in-out" role="menuitem" tabindex="-1" id="menu-item-1">+33 6 98 11 88 90</a>
                               <a href="../contact/" class="text-gray-300 block px-4 py-2 text-sm hover:bg-bodyDanna hover:text-white transition duration-300 ease-in-out" role="menuitem" tabindex="-1" id="menu-item-2">Nous écrire</a>
                             </div>
@@ -69,7 +79,7 @@
                             </svg>
                         </button>
                         <div id="disclosure-1" class="hidden mt-2 space-y-2 transition duration-700 ease-in-out">
-                            <a href="../demande-de-devis/" class="block font-medium text-flashDanna py-1 leading-7 pl-3 hover:text-green-500 transition duration-300 ease-in-out">Obtenir un devis gratuit</a>
+                            <a href="../demande-de-devis/" class="block font-medium text-font2Danna py-1 leading-7 pl-3 hover:text-flashDanna transition duration-300 ease-in-out">Obtenir un devis gratuit</a>
                             <a href="tel:+33698118890" class="block font-medium text-gray-300 py-1 leading-7 pl-3 hover:text-white transition duration-300 ease-in-out">+33 6 98 11 88 90</a>
                             <a href="../contact/" class="block font-medium text-gray-300 py-1 leading-7 pl-3 hover:text-white transition duration-300 ease-in-out">Nous écrire</a>
                         </div>
@@ -77,12 +87,36 @@
                 </ul>
 
                 <div class="menu-items hidden justify-center items-center mt-6 md:mt-0 md:justify-end md:flex">
-                    <a href="../demande-de-devis/" class="hidden px-6 py-2 font-medium text-flashDanna hover:text-[#72cf6a] text-center w-40 md:text-xs md:flex lg:text-base">Obtenir un devis gratuit</a>
+                    <a href="../demande-de-devis/" class="hidden py-2 font-medium text-font2Danna hover:text-flashDanna text-center w-56 md:text-xs md:flex lg:text-base">Obtenir un devis gratuit</a>
                 </div>
             </nav>
         </header>
-        
-        <footer class="bg-navDanna py-5 mt-auto border-y border-gray-400">
+        <!------- 
+        | BANNER |
+         -------->
+        <section>
+            <div class=" bg-banner-service bg-center bg-cover">
+                <div class="flex justify-center relative text-center pt-40 pb-32 sm:top-28 sm:pt-20 sm:pb-72 lg:top-28">
+                    <h1 class="text-center text-shadow text-gray-50 font-black font-inter text-5xl md:text-7xl xl:text-8xl">Services</h1>
+                </div>
+            </div>
+        </section>
+        <!--------- 
+        | SERVICES |
+         ---------->
+        <section>
+            <div class="p-5 bg-red-400 flex flex-wrap">
+                <div class="grid grid-rows-3 grid-flow-col gap-4 bg-white rounded-3xl">
+                    <img src="../assets/images/service/UX-UI-DESIGN.jpg" alt="" class="row-span-3 bg-center bg-cover w-60 h-60 rounded-s-xl">
+                    <div class="col-span-2">TITRE ICI</div>
+                    <div class="row-span-2 col-span-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dicta eaque odit voluptas sint harum!</div>
+                </div>
+            </div>
+        </section>
+        <!------- 
+        | FOOTER |
+         -------->
+        <footer class="bg-navDanna py-1 mt-auto border-y border-gray-400">
             <div class="grid grid-cols-1 max-w-xl mx-auto p-4 lg:grid-cols-3 lg:max-w-7xl md:py-10">
                 <div class="ml-2 my-5 order-2 border-b-2 lg:border-0 lg:order-1 lg:ml-6">
                     <h5 class="font-bold text-gray-100 text-xl">Contact</h5>
