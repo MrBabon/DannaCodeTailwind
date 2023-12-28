@@ -23,7 +23,7 @@
         <!-- Cookie -->
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
     </head>
-    <body class="bg-gradient-to-br from-fontDanna via-bodyDanna to-navDanna">
+    <body class="bg-gradient-to-br from-fontDanna via-bodyDanna to-navDanna selection:bg-flashDanna selection:text-navDanna">
         <!------- 
         | NAVBAR |
          -------->
@@ -44,7 +44,7 @@
                     <li class="py-2 pl-3">
                         <div class="group">
                             <div class="flex">
-                                <a href=".." class="font-medium text-lg text-zinc-300 relative after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:absolute after:origin-bottom-left after:transform after:ease-in-out after:duration-200 w-full after:w-full group-hover:after:scale-x-100 group-hover:after:origin-bottom-left after:bg-flashDanna hover:text-white md:text-base lg:text-lg">Accueil</a>
+                                <a href=".." class="font-medium text-lg text-zinc-300  w-auto relative after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:absolute after:origin-bottom-left after:transform after:ease-in-out after:duration-200  after:w-full group-hover:after:scale-x-100 group-hover:after:origin-bottom-left after:bg-flashDanna hover:text-white md:text-base lg:text-lg">Accueil</a>
                             </div>
                         </div>
                     </li>
@@ -57,7 +57,7 @@
                     </li>
                     <li class="md:py-2 relative">
                         <div class=" pl-3 group"> 
-                            <button type="button" class="hidden font-medium text-lg text-zinc-300 relative after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:absolute after:origin-bottom-left after:transform after:ease-in-out after:duration-200 w-full after:w-full group-hover:after:scale-x-75 group-hover:after:origin-bottom-left after:bg-flashDanna hover:text-white transition duration-400 ease-in-out md:flex md:items-center md:text-base lg:text-lg" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                            <button type="button" class="hidden font-medium text-lg text-zinc-300 relative after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:absolute after:origin-bottom-left after:transform after:ease-in-out after:duration-200 w-auto after:w-full group-hover:after:scale-x-75 group-hover:after:origin-bottom-left after:bg-flashDanna hover:text-white transition duration-400 ease-in-out md:flex md:items-center md:text-base lg:text-lg" id="menu-button" aria-expanded="true" aria-haspopup="true">
                                 Contact
                                 <svg class="ml-2 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                     <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
@@ -71,8 +71,8 @@
                             </div>
                         </div>
                     </li>
-                    <li class="py-2 pl-3 relative  md:hidden">
-                        <button type="button" class="flex items-center font-medium text-lg text-zinc-300 hover:text-white" id="menu-button-phone" aria-controls="disclosure-1" aria-expanded="false">
+                    <li class="py-2 pl-3 group relative  md:hidden">
+                        <button type="button" class="flex items-center font-medium text-lg text-zinc-300 hover:text-white relative after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:absolute after:origin-bottom-left after:transform after:ease-in-out after:duration-200 w-auto after:w-full group-hover:after:scale-x-75 group-hover:after:origin-bottom-left after:bg-flashDanna  transition duration-400 ease-in-out md:flex md:items-center md:text-base lg:text-lg" id="menu-button-phone" aria-controls="disclosure-1" aria-expanded="false">
                             Contact
                             <svg class="ml-2 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                 <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
@@ -96,7 +96,7 @@
          -------->
         <section>
             <div class=" bg-banner-service bg-center bg-cover">
-                <div class="flex justify-center relative text-center pt-40 pb-32 sm:top-28 sm:pt-20 sm:pb-72 lg:top-28">
+                <div class="relative text-center pt-40 pb-16 sm:top-28 sm:pt-20 sm:pb-48 lg:top-28">
                     <h1 class="text-center text-shadow text-gray-50 font-black font-inter text-5xl md:text-7xl xl:text-8xl">Services</h1>
                 </div>
             </div>
@@ -105,14 +105,96 @@
         | SERVICES |
          ---------->
         <section>
-            <div class="p-5 bg-red-400 flex flex-wrap">
-                <div class="grid grid-rows-3 grid-flow-col gap-4 bg-white rounded-3xl">
-                    <img src="../assets/images/service/UX-UI-DESIGN.jpg" alt="" class="row-span-3 bg-center bg-cover w-60 h-60 rounded-s-xl">
-                    <div class="col-span-2">TITRE ICI</div>
-                    <div class="row-span-2 col-span-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dicta eaque odit voluptas sint harum!</div>
+            <div class="px-4 py-6">
+                <h1 class="relative">
+                    <span class="block font-hurricane text-flashDanna font-extralight text-shadow text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">Exploitez le Potentiel du Web!</span>
+                    <span class="block absolute top-16 font-black text-gray-200 text-shadow font-inter sm:text-lg sm:top-12 md:text-xl md:top-16 lg:text-2xl lg:top-16 xl:text-3xl xl:top-20">Services de Site Web Complet à Votre Portée! 🌐</span>
+                </h1>
+            </div>
+            <div class="max-w-2xl mx-auto mt-8 px-4 py-8 lg:max-w-7xl grid grid-cols-1 gap-y-10 gap-x-8 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="bg-navDanna shadow-lg rounded-lg mx-auto w-56 group sm:w-auto">
+                    <div class="overflow-hidden rounded-t-lg">
+                        <img src="https://res.cloudinary.com/dilp6xqmb/image/upload/v1703689132/crea-site.jpg" alt="Étude de projet" class="max-h-56 rounded-t-lg scale-150 transition-all duration-150 group-hover:scale-100">
+                    </div>
+                    <div class="p-4">
+                        <div class="mb-1">
+                            <h3 class="text-gray-50 font-black sm:text-lg xl:text-xl">Création de Site internet 🚀</h3>
+                            <p class="mt-3 text-gray-400 font-medium text-sm sm:text-base xl:text-lg">Transformez vos idées en sites web exceptionnels qui captivent votre audience. Nous allions créativité et fonctionnalité pour offrir une expérience en ligne mémorable à vos visiteurs. Du concept à la réalité, nous donnons vie à votre présence en ligne.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-navDanna shadow-lg rounded-lg mx-auto w-56 group sm:w-auto">
+                    <div class="overflow-hidden rounded-t-lg">
+                        <img src="https://res.cloudinary.com/dilp6xqmb/image/upload/v1703692143/analyse-google.jpg" alt="Étude de projet" class="max-h-56 bg-cover bg-center rounded-t-lg scale-150 transition-all duration-150 group-hover:scale-100">
+                    </div>
+                    <div class="p-4">
+                        <div class="mb-1">
+                            <h3 class="text-gray-50 font-black sm:text-lg xl:text-xl">Référencement Avancé 🔍</h3>
+                            <p class="mt-3 text-gray-400 font-medium text-sm sm:text-base xl:text-lg">Dominez Google et placez-vous en tête des résultats de recherche. Nos stratégies de référencement avancées maximisent votre visibilité en ligne, attirant un trafic qualifié et augmentant votre présence digitale de manière significative.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-navDanna shadow-lg rounded-lg mx-auto w-56 group sm:w-auto">
+                    <div class="overflow-hidden rounded-t-lg">
+                        <img src="https://res.cloudinary.com/dilp6xqmb/image/upload/v1703692144/shop-online.jpg" alt="Étude de projet" class="max-h-56 rounded-t-lg scale-150 transition-all duration-150 group-hover:scale-100">
+                    </div>
+                    <div class="p-4">
+                        <div class="mb-1">
+                            <h3 class="text-gray-50 font-black sm:text-lg xl:text-xl">Création de Boutique en Ligne 🛍️</h3>
+                            <p class="mt-3 text-gray-400 font-medium text-sm sm:text-base xl:text-lg">Lancez votre commerce en ligne avec style. Notre équipe crée des boutiques attrayantes et fonctionnelles, vous permettant de présenter vos produits de manière séduisante et d'offrir une expérience d'achat en ligne fluide.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-navDanna shadow-lg rounded-lg mx-auto w-56 group sm:w-auto">
+                    <div class="overflow-hidden rounded-t-lg">
+                        <img src="https://res.cloudinary.com/dilp6xqmb/image/upload/v1703692181/responsive.jpg" alt="Étude de projet" class="max-h-56 rounded-t-lg scale-150 transition-all duration-150 group-hover:scale-100">
+                    </div>
+                    <div class="p-4">
+                        <div class="mb-1">
+                            <h3 class="text-gray-50 font-black sm:text-lg xl:text-xl">100% Responsive 📱</h3>
+                            <p class="mt-3 text-gray-400 font-medium text-sm sm:text-base xl:text-lg">Offrez une expérience utilisateur optimale sur tous les appareils. Nos sites sont entièrement réactifs, garantissant une navigation fluide et une accessibilité maximale, quel que soit le dispositif utilisé par vos visiteurs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-navDanna shadow-lg rounded-lg mx-auto w-56 group sm:w-auto">
+                    <div class="overflow-hidden rounded-t-lg">
+                        <img src="https://res.cloudinary.com/dilp6xqmb/image/upload/v1703692148/maintenance.jpg" alt="Étude de projet" class="max-h-56 rounded-t-lg scale-150 transition-all duration-150 group-hover:scale-100">
+                    </div>
+                    <div class="p-4">
+                        <div class="mb-1">
+                            <h3 class="text-gray-50 font-black sm:text-lg xl:text-xl">Maintenance de Site Internet 🛠️</h3>
+                            <p class="mt-3 text-gray-400 font-medium text-sm sm:text-base xl:text-lg">Assurez la pérennité de votre site avec notre service de maintenance proactive. Nous surveillons attentivement la performance, effectuons des mises à jour régulières et intervenons rapidement pour résoudre tout problème, garantissant un fonctionnement sans faille.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-navDanna shadow-lg rounded-lg mx-auto w-56 group sm:w-auto">
+                    <div class="overflow-hidden rounded-t-lg">
+                        <img src="https://res.cloudinary.com/dilp6xqmb/image/upload/v1703692144/design-ux.jpg" alt="Étude de projet" class="max-h-56 rounded-t-lg scale-150 transition-all duration-150 group-hover:scale-100">
+                    </div>
+                    <div class="p-4">
+                        <div class="mb-1">
+                            <h3 class="text-gray-50 font-black sm:text-lg xl:text-xl">Webdesign Personnalisé 🎨</h3>
+                            <p class="mt-3 text-gray-400 font-medium text-sm sm:text-base xl:text-lg">Chaque pixel compte. Avec notre approche de webdesign personnalisé, nous créons des designs épurés qui reflètent l'identité unique de votre entreprise. Chaque détail est soigneusement pensé pour captiver et convertir vos visiteurs.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+        <!-------- 
+        | CONTACT |
+         --------->
+         <section>
+            <div class="max-w-2xl mx-auto px-4 py-8 lg:max-w-4xl">
+                <div class="bg-navDanna py-5 rounded mb-5 shadow-md sm:flex sm:items-center sm:justify-between sm:px-8">
+                    <div class="">
+                        <h2 class="flex items-baseline justify-center text-gray-50 font-bold md:space-x-4 sm:text-lg md:text-2xl lg:text-4xl"><img src="../assets/images/icon/cup-hot-fill.svg" alt="" class="pr-3 w-10"><span></span> Faisons connaissance</h2>
+                    </div>
+                    <div class="flex justify-center">
+                        <a href="../contact/" class="flex justify-center items-center w-40 mt-5 px-3 py-2 rounded shadow-sm shadow-gray-200 text-gray-400 font-semibold bg-gradient-to-r from-fontDanna to-bodyDanna hover:text-gray-50 hover:shadow hover:shadow-white hover:scale-105 transition-all duration-150 sm:relative sm:bottom-2">Contactez-nous</a>
+                    </div>
+                </div>
+            </div>
+         </section>
         <!------- 
         | FOOTER |
          -------->
@@ -185,7 +267,7 @@
             </div>
         </footer>
         <div class="py-4 w-full text-center">
-            <p class="font-extralight text-sm text-gray-100 sm:text-base">&nbsp;Copyright&nbsp;&copy;&nbsp;DannaCode <script>document.write(new Date().getFullYear())</script> - <a href="../mentions-legales/" class="text-gray-400 transition duration-100 ease-in-out hover:text-gray-100">Mentions légales</a></p>
+            <p class="font-extralight text-xs text-gray-100 sm:text-base">&nbsp;Copyright&nbsp;&copy;&nbsp;DannaCode <script>document.write(new Date().getFullYear())</script> - <a href="../mentions-legales/" class="text-gray-400 transition duration-100 ease-in-out hover:text-gray-100">Mentions légales</a></p>
         </div>
       <script type="module" src="../assets/js/script.js"></script>
     </body>
