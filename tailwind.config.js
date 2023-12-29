@@ -17,6 +17,9 @@ module.exports = {
       gridTemplateColumns:{
         "menu": "150px 1fr 295px"
       },
+      backgroundColor: {
+        'rgba': 'rgba(5, 26, 36, 0.8)',
+      },
       backgroundImage: {
         'banner-home': "linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url('https://res.cloudinary.com/dilp6xqmb/image/upload/v1701768624/Banner_home.jpg')",
         'valeur-home': "linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.85)),url('https://res.cloudinary.com/dilp6xqmb/image/upload/v1701768622/pion.jpg')",

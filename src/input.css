@@ -12,12 +12,21 @@
 .cta-striper-contact {
   background-image: radial-gradient(circle at center center, rgba(33,33,33,0),rgb(5,26,36)),repeating-linear-gradient(135deg, rgb(5,26,36) 0px, rgb(5,26,36) 1px,transparent 1px, transparent 4px),repeating-linear-gradient(45deg, rgb(6,55,58) 0px, rgb(6,55,58) 5px,transparent 5px, transparent 6px),linear-gradient(90deg, rgb(5,26,36),rgb(5,26,36));
 }
+
+/* Si l'utilisateur à une sugestion de mettre automatiquement ses coordonnée */
+input:-webkit-autofill {
+  transition: color 5000s ease-in-out 0s, background-color 5000s ease-in-out 0s;
+}
+input:-webkit-autofill:focus {
+  background-color: initial !important;
+  color: #e8e8e8 !important;
+}
+/* SCROLLBAR VERTICAL ET HORIZONTAL */
 @media (max-width:640px) {  
   .hide-scrollbar::-webkit-scrollbar{
     display: none;
   }
 }
-
 .hide-scrollbar::-webkit-scrollbar {
   height: 6px;
   background-color: #051a24; /* Couleur de fond de la barre de défilement */
@@ -34,6 +43,7 @@
 }
 
 body::-webkit-scrollbar {
+  height: 6px;
   width: 6px;
   background-color: #051a24; /* Couleur de fond de la barre de défilement */
   
