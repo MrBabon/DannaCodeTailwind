@@ -1,60 +1,69 @@
 <?php
-    header('Content-Type: application/json');
-    $array = array(
-        "firstname" => verifyInput($_POST["firstname"]),
-        "name" => verifyInput($_POST["name"]),
-        "email" => verifyInput($_POST["email"]),
-        "phone" => verifyInput($_POST["phone"]),
-        "message" => verifyInput($_POST["message"]),
-        "firstnameError" => "",
-        "nameError" => "",
-        "emailError" => "",
-        "phoneError" => "",
-        "messageError" => "",
-        "isSuccess" => true
-    );
-    $emailTo = "contact@dannacode.com";
-    $emailText = "";
-    $fields = array("firstname", "name", "email", "phone", "message");
-    
-    foreach ($fields as $field) {
-        if (empty($array[$field])) {
-            $array[$field . "Error"] = "Le champ $field est obligatoire";
-            $array["isSuccess"] = false;
-        } else {
-            $emailText .= ucfirst($field) . ": {$array[$field]}\n";
-        }
+header('Content-Type: application/json');
+
+$array = array(
+    "firstname" => isset($_POST["firstname"]) ? verifyInput($_POST["firstname"]) : "",
+    "lastname" => isset($_POST["lastname"]) ? verifyInput($_POST["lastname"]) : "",
+    "email" => isset($_POST["email"]) ? verifyInput($_POST["email"]) : "",
+    "phone" => isset($_POST["phone"]) ? verifyInput($_POST["phone"]) : "",
+    "company" => isset($_POST["phone"]) ? verifyInput($_POST["company"]) : "",
+    "date" => isset($_POST["date"]) ? verifyInput($_POST["date"]) : "",
+    "time" => isset($_POST["time"]) ? verifyInput($_POST["time"]) : "",
+    "message" => isset($_POST["message"]) ? verifyInput($_POST["message"]) : "",
+    "firstnameError" => "",
+    "lastnameError" => "",
+    "emailError" => "",
+    "phoneError" => "",
+    "dateError" => "",
+    "timeError" => "",
+    "messageError" => "",
+    "isSuccess" => true
+);
+
+$emailTo = "contact@dannacode.com";
+$emailText = "";
+$fields = array("firstname", "lastname", "email", "phone", "date", "time", "message");
+foreach ($fields as $field) {
+    if (empty($array[$field])) {
+        $array[$field . "Error"] = "Le champ $field est obligatoire";
+        $array["isSuccess"] = false;
+    } elseif ($field === "phone" && !isPhone($array[$field])) {
+        $array[$field . "Error"] = "Le champ $field n'est pas valide";
+        $array["isSuccess"] = false;
+    } else {
+        $emailText .= ucfirst($field) . ": {$array[$field]}\n";
     }
-        
+}
 
-        
-        
-        if($array["isSuccess"])
-        {
-            $headers = "From: {$array["firstname"]} {$array["name"]} <{$array["email"]}>\r\nReply-To: {$array["email"]}\r\nX-Originating-IP: {$_SERVER['REMOTE_ADDR']}";
-            mail($emailTo,"Un message de votre site www.dannacode.com", $emailText , $headers);
-            
+if ($array["isSuccess"]) {
+    $headers = "From: {$array["firstname"]} {$array["lastname"]} <{$array["email"]}>\r\nReply-To: {$array["email"]}\r\nX-Originating-IP: {$_SERVER['REMOTE_ADDR']}";
 
-        }
-        
+    $emailText = "Nom: {$array["lastname"]}\n";
+    $emailText .= "Prénom: {$array["firstname"]}\n";
+    $emailText .= "Email: {$array["email"]}\n";
+    $emailText .= "Téléphone: {$array["phone"]}\n";
+    $emailText .= "Entreprise: {$array["company"]}\n";
+    $emailText .= "Date: {$array["date"]}\n";
+    $emailText .= "Heure: {$array["time"]}\n";
+    $emailText .= "Message: {$array["message"]}\n";
 
-        echo json_encode($array);
-    
-    
-    function isPhone($var)
-    {
-        return preg_match("/^[0-9 ]*$/", $var);
-    }
+    mail($emailTo, "Un message de votre site www.dannacode.com", $emailText, $headers);
+}
 
-    function isEmail($var)
-    {
-        return filter_var($var, FILTER_VALIDATE_EMAIL);
+echo json_encode($array);
 
-    }
-    // POUR SECURISER LE SITE
+function isPhone($var)
+{
+    return preg_match("/^[0-9 ]+$/", $var);
+}
 
-    function verifyInput($var)
-    {
-        return htmlspecialchars(stripslashes(trim($var)));
-    }
+function isEmail($var)
+{
+    return filter_var($var, FILTER_VALIDATE_EMAIL);
+}
+
+function verifyInput($var)
+{
+    return htmlspecialchars(stripslashes(trim($var)));
+}
 ?>

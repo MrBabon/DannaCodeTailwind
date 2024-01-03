@@ -118,18 +118,18 @@
                     <div class="col-span-2">
                         <div class="grid grid-rows-2 grid-flow-col gap-2 w-full bg-navDanna pr-2 py-4 my-3 rounded shadow-sm shadow-gray-300 transition-all duration-150 ease-in-out hover:shadow hover:shadow-gray-50 sm:w-80 md:w-96 lg:w-80 xl:w-96">
                             <div class="row-span-3 flex justify-center">
-                                <img src="../assets/images/icon/telephone-fill.svg" alt="" class="w-10">
+                                <img src="../assets/images/icon/telephone-fill.svg" alt="Téléphone" class="w-10">
                             </div>
-                            <p class="col-span-2 mt-1 text-xs font-medium text-gray-200 underline">Téléphone:</p>
+                            <p class="col-span-2 mt-1 text-xs font-medium text-gray-200 underline underline-offset-4">Téléphone:</p>
                             <a href="tel:+33698118890" class="row-span-2 col-span-2 text-gray-300 text-xs font-extrabold">+33 6 98 11 88 90</a>
                         </div>
                     </div>
                     <div class="col-span-2">
                         <div class="grid grid-rows-2 grid-flow-col gap-2 w-full bg-navDanna pl-1 pr-2 py-4 my-2 rounded shadow-sm shadow-gray-300 transition-all duration-150 ease-in-out hover:shadow hover:shadow-gray-50 sm:w-80 md:w-96 lg:w-80 xl:w-96">
                             <div class="row-span-3 flex justify-center">
-                                <img src="../assets/images/icon/envelope-at-fill.svg" alt="" class="w-10 mx-5">
+                                <img src="../assets/images/icon/envelope-at-fill.svg" alt="envelope" class="w-10 mx-5">
                             </div>
-                            <p class="col-span-2 mt-1 text-xs font-medium text-gray-200 underline">Email:</p>
+                            <p class="col-span-2 mt-1 text-xs font-medium text-gray-200 underline underline-offset-4">Email:</p>
                             <a href="mailto:contact@dannacode.com?subject=Demande%20d'informations" class="row-span-2 col-span-2 text-gray-300  text-xs font-extrabold">christophedanna06@gmail.com</a>
                         </div>
                     </div>
@@ -143,39 +143,39 @@
                     <span class="text-gray-50 font-black text-lg lg:text-xl xl:text-3xl">Prêt à discuter de vos besoins ?</span>
                     <span class="block text-gray-400 font-light text-xs lg:text-sm xl:text-base">Planifions ensemble une rencontre pour explorer comment je peux vous assister au mieux. Remplissez le formulaire ci-dessous pour fixer un rendez-vous.</span>
                 </h2>
-                <form id="contact-form" class="border border-flashDanna rounded mt-5 mx-3 py-4 bg-navDanna" method="post" action="" role="form">
+                <form name="DannaForm" onsubmit="return validateForm()" id="contact-form" class="border border-flashDanna rounded mt-5 mx-3 py-4 bg-navDanna" method="post" action="" role="form">
                     <div class="grid grid-cols-4 gap-x-3 mx-4">
                         <div class="col-span-2">
                             <label for="lastname" class="text-gray-50">Nom <span class="text-red-700">*</span></label>
-                            <input id="lastname" type="text" class="bg-gray-700 text-gray-200 ring-1 ring-slate-900/10 shadow-sm rounded-md p-2 mb-4 caret-flashDanna focus:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-flashDanna transition ease-in-out duration-150 w-full" placeholder="Votre nom" required>
+                            <input id="lastname" name="lastname" type="text" autocomplete="off" class=" bg-gray-700 text-gray-200 ring-1 ring-slate-900/10 shadow-sm rounded-md p-2 mb-4 caret-flashDanna focus:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-flashDanna transition ease-in-out duration-150 w-full" placeholder="Votre nom" required>
                         </div>
                         <div class="col-span-2">
                             <label for="firstname" class="text-gray-50">Prénom <span class="text-red-700">*</span></label>
-                            <input type="text" class="bg-gray-700 text-gray-200 ring-1 ring-slate-900/10 shadow-sm rounded-md p-2 mb-4 caret-flashDanna focus:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-flashDanna transition ease-in-out duration-150 w-full" placeholder="Votre prénom" required>
+                            <input id="firstname" name="firstname" type="text" autocomplete="off" class=" bg-gray-700 text-gray-200 ring-1 ring-slate-900/10 shadow-sm rounded-md p-2 mb-4 caret-flashDanna focus:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-flashDanna transition ease-in-out duration-150 w-full" placeholder="Votre prénom" required>
                         </div>
                         <div class="col-span-4 sm:col-span-2">
                             <label for="email" class="text-gray-50">Email <span class="text-red-700">*</span></label>
-                            <input id="email" type="email" class="bg-gray-700 text-gray-200 ring-1 ring-slate-900/10 shadow-sm rounded-md p-2 mb-4 caret-flashDanna focus:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-flashDanna transition ease-in-out duration-150 w-full" placeholder="Votre email" required>
+                            <input id="email" name="email" autocomplete="off" type="email" class=" bg-gray-700 text-gray-200 ring-1 ring-slate-900/10 shadow-sm rounded-md p-2 mb-4 caret-flashDanna focus:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-flashDanna transition ease-in-out duration-150 w-full" placeholder="Votre email" required>
                         </div>
                         <div class="col-span-4 sm:col-span-2">
                             <label for="phone" class="text-gray-50">Téléphone <span class="text-red-700">*</span></label>
-                            <input id="phone" type="tel" class="bg-gray-700 text-gray-200 ring-1 ring-slate-900/10 shadow-sm rounded-md p-2 mb-4 caret-flashDanna focus:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-flashDanna transition ease-in-out duration-150 w-full" placeholder="Votre téléphone" required>
+                            <input id="phone" name="phone" autocomplete="off" type="tel" class=" bg-gray-700 text-gray-200 ring-1 ring-slate-900/10 shadow-sm rounded-md p-2 mb-4 caret-flashDanna focus:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-flashDanna transition ease-in-out duration-150 w-full" placeholder="Votre téléphone" required>
                         </div>
                         <div class="col-span-4">
                             <label for="company" class="text-gray-50">Entreprise</label>
-                            <input id="company" type="text" class="col-span-2 bg-gray-700 text-gray-200 ring-1 ring-slate-900/10 shadow-sm rounded-md p-2 mb-4 caret-flashDanna focus:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-flashDanna transition ease-in-out duration-150 w-full" placeholder="Votre entreprise">
+                            <input id="company" name="company" type="text" autocomplete="off" class="col-span-2  bg-gray-700 text-gray-200 ring-1 ring-slate-900/10 shadow-sm rounded-md p-2 mb-4 caret-flashDanna focus:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-flashDanna transition ease-in-out duration-150 w-full" placeholder="Votre entreprise">
                         </div>
                         <div class="col-span-3">
                             <label for="date" class="block text-gray-50">Date <span class="text-red-700">*</span></label>
-                            <input id="date" type="date" class="bg-gray-700 text-gray-200 ring-1 ring-slate-900/10 shadow-sm rounded-md p-2 mb-4 caret-flashDanna focus:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-flashDanna transition ease-in-out duration-150 w-full" placeholder="Date" required>
+                            <input id="date" name="date" type="date" class=" bg-gray-700 text-gray-200 ring-1 ring-slate-900/10 shadow-sm rounded-md p-2 mb-4 caret-flashDanna focus:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-flashDanna transition ease-in-out duration-150 w-full" placeholder="Date" required>
                         </div>
                         <div class="">
                             <label for="time" class="block text-gray-50">Heure <span class="text-red-700">*</span></label>
-                            <input type="time" class="bg-gray-700 text-gray-200 ring-1 ring-slate-900/10 shadow-sm rounded-md p-2 mb-4 caret-flashDanna focus:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-flashDanna transition ease-in-out duration-150 w-full" placeholder="Heure" required>
+                            <input id="time" name="time" type="time" class="comments bg-gray-700 text-gray-200 ring-1 ring-slate-900/10 shadow-sm rounded-md p-2 mb-4 caret-flashDanna focus:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-flashDanna transition ease-in-out duration-150 w-full" placeholder="Heure" required>
                         </div>
                         <div class="col-span-4">
                             <label for="message" class="text-gray-50">Message <span class="text-red-700">*</span></label>
-                            <textarea  class="bg-gray-700 text-gray-200 ring-1 ring-slate-900/10 shadow-sm rounded-md p-2 mb-4 caret-flashDanna focus:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-flashDanna transition ease-in-out duration-150 w-full" placeholder="Votre message..." required></textarea>
+                            <textarea id="message" name="message" rows="2" cols="50" class="bg-gray-700 text-gray-200 ring-1 ring-slate-900/10 shadow-sm rounded-md p-2 mb-4 caret-flashDanna focus:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-flashDanna transition ease-in-out duration-150 w-full" placeholder="Votre message..." required></textarea>
                         </div>
                         <div class="col-span-4">
                             <input required class="form-check-input accent-fontDanna" type="checkbox" value="accepted" name="checkbox" id="flexCheckIndeterminate">
@@ -188,6 +188,24 @@
                 </form>
             </div>
          </section>
+         <!------- 
+        | OVERLAY |
+         --------->
+         <section>
+            <div class="hidden fixed top-0 left-0 w-full h-full bg-rgba justify-center items-center text-white z-50" id="overlay">
+                <div class="relative w-72 h-56 bg-gradient-to-r from-bodyDanna from-30% to-navDanna py-5 px-4 text-center rounded border hidden content-between sm:w-80 md:w-96" id="modal">
+                    <div class="flex justify-center">
+                        <img src="../assets/images/icon/check-circle-fill.svg" alt="check" class="w-7">
+                    </div>
+                    <div class="">
+                        <p class="text-sm md:text-base">Nous vous remercions pour votre message. Votre demande est en cours de traitement et sera traitée dans les meilleurs délais.</p>
+                    </div>
+                    <div class="py-3 px-5 bg-fontDanna text-gray-100 font-medium rounded transition-all duration-150 ease-in-out hover:text-white hover:scale-105 sm:place-self-center">
+                        <a href=".." onclick="closeModal()">Retour à l'accueil</a>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!------- 
         | FOOTER |
          -------->
@@ -210,24 +228,24 @@
                         </li>
                         <li class="py-2">
                             <div class="flex space-x-4 mb-4">
-                                <div class="w-10 h-10 rounded-full flex justify-center items-center transition duration-200 hover:scale-110 hover:bg-bodyDanna">
+                                <div class="w-10 h-10 rounded-full flex justify-center border-2 border-flashDanna items-center transition duration-200 hover:scale-110 hover:border-fontDanna hover:bg-bodyDanna">
                                     <a href="">
-                                        <img src="../assets/images/icon/facebook.svg" alt="facebook" class="w-5">
+                                        <img src="../assets/images/icon/facebook.svg" alt="facebook" class="w-4">
                                     </a>
                                 </div>
-                                <div class="w-10 h-10 rounded-full flex justify-center items-center transition duration-200 hover:scale-110 hover:bg-bodyDanna">
+                                <div class="w-10 h-10 rounded-full flex justify-center border-2 border-flashDanna items-center transition duration-200 hover:scale-110 hover:border-fontDanna hover:bg-bodyDanna">
                                 <a href="">
-                                    <img src="../assets/images/icon/instagram.svg" alt="instagram" class="w-5">
+                                    <img src="../assets/images/icon/instagram.svg" alt="instagram" class="w-4">
                                 </a>
                                 </div>
-                                <div class="w-10 h-10 rounded-full flex justify-center items-center transition duration-200 hover:scale-110 hover:bg-bodyDanna">
+                                <div class="w-10 h-10 rounded-full flex justify-center border-2 border-flashDanna items-center transition duration-200 hover:scale-110 hover:border-fontDanna hover:bg-bodyDanna">
                                     <a href="">
-                                        <img src="../assets/images/icon/linkedin.svg" alt="linkedin" class="w-5">
+                                        <img src="../assets/images/icon/linkedin.svg" alt="linkedin" class="w-4">
                                     </a>
                                 </div>
-                                <div class="w-10 h-10 rounded-full flex justify-center items-center transition duration-200 hover:scale-110 hover:bg-bodyDanna">
+                                <div class="w-10 h-10 rounded-full flex justify-center border-2 border-flashDanna items-center transition duration-200 hover:scale-110 hover:border-fontDanna hover:bg-bodyDanna">
                                 <a href="">
-                                    <img src="../assets/images/icon/twitter-x.svg" alt="twitter" class="w-5">
+                                    <img src="../assets/images/icon/twitter-x.svg" alt="twitter" class="w-4">
                                 </a>
                                 </div>
                             </div>
@@ -270,5 +288,6 @@
             <div class="w-5 h-5 rounded-full bg-flashDanna animate-bounce [animation-delay:-.5s]"></div>
         </div>
       <script type="module" src="../assets/js/script.js"></script>
+      <script defer src="../assets/js/contact.js"></script>
     </body>
 </html>
