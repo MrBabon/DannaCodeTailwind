@@ -38,14 +38,15 @@ foreach ($fields as $field) {
 if ($array["isSuccess"]) {
     $headers = "From: {$array["firstname"]} {$array["lastname"]} <{$array["email"]}>\r\nReply-To: {$array["email"]}\r\nX-Originating-IP: {$_SERVER['REMOTE_ADDR']}";
 
-    $emailText = "Nom: {$array["lastname"]}\n";
+    $formattedDate = date("d/m/Y", strtotime($array["date"]));
+
+    $emailText = "Entreprise: {$array["company"]}\n";
+    $emailText .= "Nom: {$array["lastname"]}\n";
     $emailText .= "Prénom: {$array["firstname"]}\n";
     $emailText .= "Email: {$array["email"]}\n";
     $emailText .= "Téléphone: {$array["phone"]}\n";
-    $emailText .= "Entreprise: {$array["company"]}\n";
-    $emailText .= "Date: {$array["date"]}\n";
-    $emailText .= "Heure: {$array["time"]}\n";
-    $emailText .= "Message: {$array["message"]}\n";
+    $emailText .= "Date et heure pour entretien téléphonique: {$formattedDate} à {$array["time"]}\n";
+    $emailText .= "Message du client: {$array["message"]}\n";
 
     mail($emailTo, "Un message de votre site www.dannacode.com", $emailText, $headers);
 }
