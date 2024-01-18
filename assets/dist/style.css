@@ -694,6 +694,10 @@ video {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
 }
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -868,6 +872,9 @@ video {
 .w-12 {
   width: 3rem;
 }
+.w-16 {
+  width: 4rem;
+}
 .w-20 {
   width: 5rem;
 }
@@ -918,6 +925,15 @@ video {
 }
 .max-w-xl {
   max-width: 36rem;
+}
+.max-w-6xl {
+  max-width: 72rem;
+}
+.max-w-4xl {
+  max-width: 56rem;
+}
+.flex-initial {
+  flex: 0 1 auto;
 }
 .flex-shrink {
   flex-shrink: 1;
@@ -1459,6 +1475,11 @@ video {
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
+.space-x-20 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(5rem * var(--tw-space-x-reverse));
+  margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
+}
 .space-x-3 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.75rem * var(--tw-space-x-reverse));
@@ -1872,6 +1893,15 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.bg-navDanna\/50 {
+  background-color: rgb(5 26 36 / 0.5);
+}
+.bg-navDanna\/10 {
+  background-color: rgb(5 26 36 / 0.1);
+}
+.bg-navDanna\/20 {
+  background-color: rgb(5 26 36 / 0.2);
+}
 .bg-banner-home {
   background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url('https://res.cloudinary.com/dilp6xqmb/image/upload/v1701768624/Banner_home.jpg');
 }
@@ -2025,6 +2055,10 @@ video {
 .p-4 {
   padding: 1rem;
 }
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -2084,6 +2118,10 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 .pb-16 {
   padding-bottom: 4rem;
@@ -2392,6 +2430,9 @@ video {
 }
 .opacity-0 {
   opacity: 0;
+}
+.opacity-50 {
+  opacity: 0.5;
 }
 .bg-blend-normal {
   background-blend-mode: normal;
@@ -2709,6 +2750,9 @@ input:-webkit-autofill:focus {
   .hide-scrollbar::-webkit-scrollbar{
     display: none;
   }
+}
+.hide-scrollbars::-webkit-scrollbar{
+  display: none;
 }
 .hide-scrollbar::-webkit-scrollbar {
   height: 6px;
@@ -3592,28 +3636,8 @@ body::-webkit-scrollbar-thumb:hover {
     top: 5rem;
   }
 
-  .lg\:top-24 {
-    top: 6rem;
-  }
-
   .lg\:top-28 {
     top: 7rem;
-  }
-
-  .lg\:top-10 {
-    top: 2.5rem;
-  }
-
-  .lg\:top-1 {
-    top: 0.25rem;
-  }
-
-  .lg\:top-9 {
-    top: 2.25rem;
-  }
-
-  .lg\:top-96 {
-    top: 24rem;
   }
 
   .lg\:order-1 {
@@ -3710,36 +3734,36 @@ body::-webkit-scrollbar-thumb:hover {
     padding: 0.75rem;
   }
 
+  .lg\:py-1 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .lg\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .lg\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .lg\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
   .lg\:pt-11 {
     padding-top: 2.75rem;
   }
 
-  .lg\:pb-52 {
-    padding-bottom: 13rem;
-  }
-
-  .lg\:pb-9 {
-    padding-bottom: 2.25rem;
-  }
-
-  .lg\:pb-96 {
-    padding-bottom: 24rem;
-  }
-
-  .lg\:pt-96 {
-    padding-top: 24rem;
-  }
-
-  .lg\:pt-0 {
-    padding-top: 0px;
-  }
-
-  .lg\:pt-1 {
-    padding-top: 0.25rem;
-  }
-
   .lg\:pt-4 {
     padding-top: 1rem;
+  }
+
+  .lg\:pt-20 {
+    padding-top: 5rem;
   }
 
   .lg\:text-right {

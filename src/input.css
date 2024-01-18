@@ -27,6 +27,9 @@ input:-webkit-autofill:focus {
     display: none;
   }
 }
+.hide-scrollbars::-webkit-scrollbar{
+  display: none;
+}
 .hide-scrollbar::-webkit-scrollbar {
   height: 6px;
   background-color: #051a24; /* Couleur de fond de la barre de défilement */
