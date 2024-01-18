@@ -694,10 +694,6 @@ video {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
 }
-.mx-10 {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
-}
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -923,14 +919,11 @@ video {
 .max-w-2xl {
   max-width: 42rem;
 }
-.max-w-xl {
-  max-width: 36rem;
-}
-.max-w-6xl {
-  max-width: 72rem;
-}
 .max-w-4xl {
   max-width: 56rem;
+}
+.max-w-xl {
+  max-width: 36rem;
 }
 .flex-initial {
   flex: 0 1 auto;
@@ -1893,15 +1886,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.bg-navDanna\/50 {
-  background-color: rgb(5 26 36 / 0.5);
-}
-.bg-navDanna\/10 {
-  background-color: rgb(5 26 36 / 0.1);
-}
-.bg-navDanna\/20 {
-  background-color: rgb(5 26 36 / 0.2);
-}
 .bg-banner-home {
   background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url('https://res.cloudinary.com/dilp6xqmb/image/upload/v1701768624/Banner_home.jpg');
 }
@@ -2049,6 +2033,9 @@ video {
   -o-object-position: center;
      object-position: center;
 }
+.p-1 {
+  padding: 0.25rem;
+}
 .p-2 {
   padding: 0.5rem;
 }
@@ -2118,10 +2105,6 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
 }
 .pb-16 {
   padding-bottom: 4rem;
@@ -2431,9 +2414,6 @@ video {
 .opacity-0 {
   opacity: 0;
 }
-.opacity-50 {
-  opacity: 0.5;
-}
 .bg-blend-normal {
   background-blend-mode: normal;
 }
@@ -2684,6 +2664,11 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
 .delay-75 {
   transition-delay: 75ms;
 }
@@ -2698,6 +2683,9 @@ video {
 }
 .duration-300 {
   transition-duration: 300ms;
+}
+.duration-500 {
+  transition-duration: 500ms;
 }
 .duration-700 {
   transition-duration: 700ms;
@@ -3734,36 +3722,16 @@ body::-webkit-scrollbar-thumb:hover {
     padding: 0.75rem;
   }
 
-  .lg\:py-1 {
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-  }
-
-  .lg\:py-12 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-
-  .lg\:py-16 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
-  .lg\:py-20 {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-
   .lg\:pt-11 {
     padding-top: 2.75rem;
   }
 
-  .lg\:pt-4 {
-    padding-top: 1rem;
-  }
-
   .lg\:pt-20 {
     padding-top: 5rem;
+  }
+
+  .lg\:pt-4 {
+    padding-top: 1rem;
   }
 
   .lg\:text-right {
