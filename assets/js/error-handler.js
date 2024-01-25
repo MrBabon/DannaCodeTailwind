@@ -1,4 +1,3 @@
-// error-handler.js
 export function handleErrors(errorCode) {
     // Déterminez quelle page d'erreur afficher en fonction du code d'erreur
     let errorPage;
