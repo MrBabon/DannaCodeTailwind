@@ -8,25 +8,23 @@
         <meta name="author" content="DannaCode.">
         <meta name="description" content="DannaCode. || Votre solution web tout-en-un : conception de sites (vitrine, e-commerce, landing page), création d'applications avec espace membre, génération de leads, maintenance, et référencement. Simplifiez votre digital avec notre expertise.">
         <meta name="keywords" content="Conception de sites web, Site vitrine, Site e-commerce, Landing page, Application web, Espace membre, Génération de leads, Maintenance web, Référencement SEO, Développement web, Web design, Expérience utilisateur (UX), Interface utilisateur (UI),Création digitale, Stratégie web, Solutions numériques, Optimisation de site, Réactivité mobile, Design moderne, Performance web">
-        <meta name="theme-color" content="#06373A" />
+        <meta name="theme-color" content="#06373A">
         <!-- TailwindCSS -->
         <link rel="stylesheet" href="assets/dist/style.css">
         <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/Logo.png" />
-        <link rel="icon" type="image/png" sizes="32x23" href="assets/images/Logo.png" />
-        <link rel="icon" type="image/png" sizes="16x11" href="assets/images/Logo.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/Logo.png">
+        <link rel="icon" type="image/png" sizes="32x23" href="assets/images/Logo.png">
+        <link rel="icon" type="image/png" sizes="16x11" href="assets/images/Logo.png">
         <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
         <!-- Font-family -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Righteous&display=swap" rel="stylesheet">
         <!-- Cookie -->
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css">
     </head>
     <body class="bg-gradient-to-br from-fontDanna via-bodyDanna to-navDanna selection:bg-flashDanna selection:text-navDanna">
-        <!------- 
-        | NAVBAR |
-         ------->
+        <!--NAVBAR-->
         <header class="fixed w-full bg-navDanna border-b border-gray-400 z-50">
             <nav class="border-b border-gray-400 top-0 z-20 p-4 w-full grid grid-cols-none shadow-sm bg-navDanna md:max-w-8xl md:grid-cols-menu md:shadow-none md:relative md:mx-auto md:border-b-0">
                 
@@ -87,9 +85,7 @@
                 </div>
             </nav>
         </header>
-        <!------- 
-        | BANNER |
-         ------->
+        <!--BANNER-->
         <section id="banner">
             <div class="bg-banner-home bg-center sm:h-[100vh] bg-cover">
                 <div class="relative text-center  pt-40 pb-56 sm:top-36 sm:pt-20 sm:pb-80 lg:pt-4 xl:top-24">
@@ -110,12 +106,10 @@
                       </div>
                 </div>
             </div>
-        </section>
-        <!------- 
-        | PROPOS |
-         ------->
-        <section id="propos" class="relative flex flex-col lg:flex-row">
-            <div class="cta-striper-bg sm:px-8 px-4 pb-16 pt-10 w-full order-2 md:px-10 md:py-32 lg:w-1/2 lg:order-1">
+        </section> 
+        <!--PROPOS-->
+        <section id="propos" class="cta-striper-bg relative flex flex-col lg:flex-row">
+            <div class="sm:px-8 px-4 pb-16 pt-10 w-full order-2 md:px-10 md:py-16 lg:w-1/2 lg:order-1">
               <h2 class="relative">
                 <span class="block font-hurricane text-shadow text-flashDanna font-extralight text-5xl sm:text-7xl md:text-9xl lg:text-8xl">À propos</span>
                 <span class="block absolute top-9 font-black text-gray-50 text-shadow font-inter text-xl sm:text-3xl sm:top-14 md:text-4xl md:top-28 lg:text-3xl lg:top-20">Votre idée, notre adaptation</span>
@@ -147,14 +141,12 @@
                   <a href="services/" class="flex justify-center items-center text-navDanna bg-flashDanna py-2 px-8 w-40 h-10 text-lg transition-all hover:translate-x-1 hover:-translate-y-1 md:mt-10 md:text-xl">Voir plus</a>
               </div>
             </div>
-            <div class="h-40 w-full relative overflow-hidden order-1 sm:h-80 lg:static lg:w-1/2 lg:h-full lg:order-2">
-              <img loading="lazy" src="https://res.cloudinary.com/dilp6xqmb/image/upload/v1701768623/Travail-equipe.jpg" alt="homme au travail" class=" absolute w-full object-cover object-center lg:h-full lg:w-1/2">
+            <div class="h-52 w-full relative overflow-hidden order-1 sm:h-80 lg:static lg:w-1/2 lg:h-1/2 lg:order-2">
+              <img loading="lazy" src="https://res.cloudinary.com/dilp6xqmb/image/upload/v1701768623/Strate%CC%81gie.jpg" alt="homme au travail" class=" absolute w-full object-cover object-center lg:h-full lg:w-1/2">
             </div>
-        </section>
-        <!--------- 
-        | CITATION |
-         --------->
-        <section id="citation" class="bg-navDanna border-y border-gray-500 py-11 px-4 text-sm font-medium">
+        </section> 
+        <!--CITATION-->
+        <div id="citation" class="bg-navDanna border-y border-gray-500 py-11 px-4 text-sm font-medium">
             <div class="">
                 <div class="text-center text-gray-50 md:text-lg">
                     <blockquote>
@@ -162,10 +154,8 @@
                     </blockquote>                
                 </div>
             </div>
-        </section>
-        <!------- 
-        | VALEUR |
-         -------->
+        </div> 
+        <!--VALEUR-->
          <section id="valeur" class="bg-valeur-home bg-cover bg-center">
             <div class="px-8 py-6">
                 <h2 class="relative">
@@ -194,14 +184,13 @@
                 </div>
             </div>
          </section>
-         <!-- CAROUSEL -->
+         <!--CAROUSEL-->
          <section class=" bg-navDanna border-y border-gray-500 py-1 px-0 text-sm font-medium mx-auto">
             <h1 class="text-center text-gray-100 font-medium text-lg uppercase">Nos différents outils</h1>
             <div id="carousel" class="overflow-hidden overflow-x-auto touch-none flex duration-500 ease-in-out hide-scrollbars px-5 mx-auto max-w-4xl bg-navDanna">
                 <div class="flex mx-auto swiper-wrapper  space-x-20 py-5 items-center">
                     <div class="swiper-slide flex-initial snap-x snap-center flex-shrink-0">
                         <h4 class="bg-clip-text text-transparent bg-gradient-to-r from-font2Danna to-flashDanna font-black text-2xl">HTML</h4>
-                      <!-- <img src="assets/images/Logo.png" class="w-16"/> -->
                     </div>
                     <div class="swiper-slide flex-initial snap-center flex-shrink-0">
                         <h4 class="bg-clip-text text-transparent bg-gradient-to-r from-font2Danna to-flashDanna font-black text-2xl">CSS</h4>
@@ -233,10 +222,7 @@
                 </div>
               </div>
         </section>
-
-         <!----------- 
-        | DÉROULEMENT |
-         ------------>
+         <!--DÉROULEMENT-->
          <section id="deroulement">
             <div class="py-3 px-5">
                 <h2 class="">
@@ -328,9 +314,7 @@
                 </div>
             </div>
          </section>
-        <!------- 
-        | FOOTER |
-         ------->
+        <!--FOOTER-->
         <footer class="bg-navDanna py-1 mt-auto border-y border-gray-400">
             <div class="grid grid-cols-1 max-w-xl mx-auto p-4 lg:grid-cols-3 lg:max-w-7xl md:py-10">
                 <div class="ml-2 mt-2 order-2 border-b-2 lg:border-0 lg:order-1 lg:ml-6">
@@ -404,12 +388,10 @@
         </div>
         <a href="" id="scrollButton" class="text-3xl">
             <span id="scrollIcon" class="transition-top h-11 w-11 bg-gradient-to-tr from-fontDanna to-bodyDanna rounded-full hidden sm:flex justify-center items-center fixed right-12 bottom-8 border-2 border-flashDanna z-50 opacity-0 transition-all duration-300 ease-in-out transition-scale hover:scale-105 hover:border-fontDanna">
-                <img src="../assets/images/icon/arrow-down-short.svg" alt="chevron-up" class="w-8 rotate-180">
+                <img src="./assets/images/icon/arrow-down-short.svg" alt="chevron-up" class="w-8 rotate-180">
             </span>
         </a>
-        <!-------- 
-        | LOADER |
-         -------->
+        <!--LOADER-->
          <div class="fixed w-full h-full bg-rgba flex justify-center items-center flex-row gap-2 z-50 top-0 left-0" id="loader">
             <div class="w-5 h-5 rounded-full bg-bodyDanna animate-bounce"></div>
             <div class="w-5 h-5 rounded-full bg-fontDanna animate-bounce [animation-delay:-.3s]"></div>
@@ -417,5 +399,6 @@
         </div>
       <script type="module" src="./assets/js/script.js"></script>
       <script defer src="assets/js/script-accueil.js"></script>
+      <script defer src="assets/js/carousel.js"></script>
     </body>
 </html>

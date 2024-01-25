@@ -1,78 +1,44 @@
-// export function initializeCarousel() {
-//    const wrapper = document.querySelector('.swiper-wrapper');
-//    const slideWidth = document.querySelector('.swiper-slide').offsetWidth;
+document.addEventListener('DOMContentLoaded', function () {
+    function initializeCarousel() {
+        const wrapper = document.querySelector('.swiper-wrapper');
+        const slideWidth = document.querySelector('.swiper-slide').offsetWidth;
 
-//    let currentPosition = 0;
+        // Ajouter deux copies supplémentaires de chaque diapositive
+        const slides = Array.from(document.querySelectorAll('.swiper-slide'));
+        for (let i = 0; i < 7; i++) {
+            slides.forEach((slide) => {
+                const clone = slide.cloneNode(true);
+                wrapper.appendChild(clone);
+            });
+        }
 
-//    function moveCarousel() {
-//        currentPosition -= 1; // Ajustez la valeur de déplacement selon votre préférence
+        let currentPosition = 0;
 
-//        // Appliquer la transition avec une valeur de translation
-//        wrapper.style.transition = 'transform 0.02s linear'; // Ajustez la durée de la transition selon votre préférence
-//        wrapper.style.transform = `translateX(${currentPosition}px)`;
+        function moveCarousel() {
+            currentPosition -= 1; // Ajustez la valeur de déplacement selon votre préférence
 
-//        // Réinitialiser la position sans interruption lorsqu'on atteint la fin du carousel
-//        if (currentPosition <= -slideWidth) {
-//            currentPosition = 0;
-//            const firstElement = wrapper.firstElementChild.cloneNode(true);
-//            wrapper.appendChild(firstElement);
-//            currentPosition += slideWidth;
-//            // Retirez la transition après un court délai
-//            setTimeout(() => {
-//                wrapper.style.transition = 'transform 0s linear';
-//                wrapper.style.transform = `translateX(${currentPosition}px)`;
-//                wrapper.removeChild(wrapper.firstElementChild);
+            // Appliquer la transition avec une valeur de translation
+            wrapper.style.transition = 'transform 0.02s linear'; // Ajustez la durée de la transition selon votre préférence
+            wrapper.style.transform = `translateX(${currentPosition}px)`;
 
-//                setTimeout(() => {
-//                    wrapper.style.transition = 'transform 0.02s linear';
-//                });
-//            }, 20); // Correspond à la durée de la transition CSS
-//        }
-//    }
+            // Réinitialiser la position sans interruption lorsqu'on atteint la fin du carousel
+            if (currentPosition <= -slideWidth * 30) {
+                currentPosition = 0;
 
-//    // Déplacez le carousel continuellement
-//    setInterval(moveCarousel, 20); // Ajustez l'intervalle selon votre préférence
-// }
+                // Retirez la transition pour éviter le saut
+                wrapper.style.transition = 'none';
 
-export function initializeCarousel() {
-   const wrapper = document.querySelector('.swiper-wrapper');
-   const slideWidth = document.querySelector('.swiper-slide').offsetWidth;
+                // Réajuster la position sans saut
+                wrapper.style.transform = `translateX(${currentPosition}px)`;
 
-   // Ajouter deux copies supplémentaires de chaque diapositive
-   const slides = Array.from(document.querySelectorAll('.swiper-slide'));
-   for (let i = 0; i < 7; i++) {
-       slides.forEach((slide) => {
-           const clone = slide.cloneNode(true);
-           wrapper.appendChild(clone);
-       });
-   }
+                // Rétablir la transition normale
+                wrapper.style.transition = 'transform 0.02s linear';
+            }
+        }
 
-   let currentPosition = 0;
+        // Déplacez le carousel continuellement
+        setInterval(moveCarousel, 20); // Ajustez l'intervalle selon votre préférence
+    }
 
-   function moveCarousel() {
-       currentPosition -= 1; // Ajustez la valeur de déplacement selon votre préférence
-
-       // Appliquer la transition avec une valeur de translation
-       wrapper.style.transition = 'transform 0.02s linear'; // Ajustez la durée de la transition selon votre préférence
-       wrapper.style.transform = `translateX(${currentPosition}px)`;
-
-       // Réinitialiser la position sans interruption lorsqu'on atteint la fin du carousel
-       if (currentPosition <= -slideWidth * 30) {
-         currentPosition = 0;
-     
-         // Retirez la transition pour éviter le saut
-         wrapper.style.transition = 'none';
-     
-         // Réajuster la position sans saut
-         wrapper.style.transform = `translateX(${currentPosition}px)`;
-     
-         // Rétablir la transition normale
-         wrapper.style.transition = 'transform 0.02s linear';
-     }
-     
-   }
-
-   // Déplacez le carousel continuellement
-   setInterval(moveCarousel, 20); // Ajustez l'intervalle selon votre préférence
-}
-
+    initializeCarousel(); // Appel de la fonction une fois que le DOM est entièrement chargé
+});
